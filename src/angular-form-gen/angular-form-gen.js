@@ -258,8 +258,15 @@ fg.config(function (fgConfigProvider, FgField) {
       //     text: 'Option 3'
       //   }],
       //   value: '1'
-      // })
-    ]
+      // }),
+
+       // new FgField('datepicker', {displayName: 'Date Picker', value:  new Date()  })
+
+    ], 'Select information fields': [
+        // new FgField('customtable', {displayName: 'Custom Table', value:  ''  }),
+         new FgField('label', {displayName: 'Label', value:  ''  }),
+         new FgField('paragraph', {nolabel:true,  value:  'Paragraph...'  })
+      ]
   };
 
 

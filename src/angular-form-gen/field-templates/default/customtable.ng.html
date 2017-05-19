@@ -1,0 +1,30 @@
+<!--textarea class="form-control"
+          fg-field-input
+		      fg-placeholder="field.schema.placeholder"
+		      ng-model="form.data[field.schema.name]"
+		      id="{{ field.$_id }}"
+		      title="{{ field.schema.tooltip }}"
+		      tabindex="{{ tabIndex }}"
+		      ng-required="field.schema.validation.required"
+		      ng-minlength="{{ field.schema.validation.minlength }}"
+          ng-maxlength="{{ field.schema.validation.maxlength }}"
+          ng-pattern="{{ field.schema.validation.pattern }}">
+</textarea-->
+
+    <table class="table table-responsive"
+           ng-model="form.data[field.schema.name]">
+
+
+        {{ field.schema.validation.rows }}/
+        {{ field.schema.validation.columns }}/
+        {{ field.schema.validation.rowValues }}/
+        {{ field.schema.validation.columnValues }}
+
+
+        <tr ng-repeat="x in names | orderBy : 'Country'">
+            <td>{{ x.Name }}</td>
+            <td>{{ x.Country }}</td>
+        </tr>
+
+
+    </table>
