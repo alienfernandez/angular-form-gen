@@ -1,8 +1,8 @@
 {
-  "name": "fa-angular-form-gen",
+  "name": "aa-angular-form-gen",
   "version": "0.1.2",
   "description": "Fork of angular-form-gen to fix RegEx errors, and utilize FontAwesome",
-  "homepage": "https://github.com/PranavSathy/angular-form-gen",
+  "homepage": "https://github.com/adrieltiti/angular-form-gen",
   "main": "gulp",
   "scripts": {
     "test": "gulp test"
@@ -14,7 +14,7 @@
     "schema",
     "generator"
   ],
-  "author": "Pranav Sathy",
+  "author": "Adriel Acosta",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
