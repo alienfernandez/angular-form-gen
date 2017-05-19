@@ -1,4 +1,4 @@
-# fa-angular-form-gen
+# aa-angular-form-gen
 
 Originally forked from angular-form-gen by PranavSathy (https://github.com/PranavSathy/angular-form-gen)
 
