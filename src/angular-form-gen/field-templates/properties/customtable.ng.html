@@ -1,120 +1,114 @@
 <div fg-tabs-pane="Properties">
     <div
-            fg-property-field-common="{ fieldname: true, displayname: true, placeholder: false, tooltip: false }"></div>
+            fg-property-field-common="{ fieldname: false, displayname: true, placeholder: false, tooltip: false }"></div>
+    <!--
 
-    <!--div fg-property-field-value>
-        <input fg-input-number
+      The field-value directive will re-render itself when certain validation values are modified.
+      This is needed because angular does not watch or observe the values of certain attributes and allows
+      an invalid initial value to be saved in the form schema.
+
+      Important: the transcluded form field must be name fieldValue!
+
+    -->
+    <div fg-property-field-value>
+        <input type="text"
                class="form-control"
-               type="text"
                name="fieldValue"
                ng-model="field.value"
-               min="{{ field.validation.min }}"
-               max="{{ field.validation.max }}"
-               ng-minlength="{{ field.validation.minlength }}"
-               ng-maxlength="{{ field.validation.maxlength }}"
-               ng-pattern="{{ field.validation.pattern }}"/>
+
+        />
+    </div>
+
+    <!--div class="fg-property-field-validation">
+        <div fg-property-field="pixel"
+             fg-property-field-label="Margin Left (%)">
+            <input fg-input-number
+                   fg-field-redraw
+                   class="form-control"
+                   type="text"
+                   name="pixel"
+                   title="Margin Left (%)"
+                   ng-model="field.validation.pixel" min="0" max="99"/>
+        </div>
     </div-->
 
 
-<!--div fg-tabs-pane="Validation">
-
-  <!-- min -->
-<!--div class="fg-property-field-validation">
-  <div fg-property-field="min"
-       fg-property-field-label="Minimum value">
-    <input fg-input-number
-           fg-field-redraw
-           class="form-control"
-           type="text"
-           name="min"
-           title="The minimum value that should be entered"
-           ng-model="field.validation.min"/>
-  </div>
-
-  <div ng-if="field.validation.min >= 0">
-    <div fg-edit-validation-message="min"></div>
-  </div>
-</div-->
-
-<!-- max -->
-<!--div class="fg-property-field-validation">
-  <div fg-property-field="max"
-       fg-property-field-label="Maximum value">
-    <input fg-input-number
-           fg-field-redraw
-           class="form-control"
-           type="text"
-           name="max"
-           title="The maximum value that should be entered"
-           ng-model="field.validation.max"/>
-  </div>
-
-  <div ng-if="field.validation.max >= 0">
-    <div fg-edit-validation-message="max"></div>
-  </div>
-</div-->
 
 
-    <div class="fg-property-field-validation">
-        <div fg-property-field="column"
-             fg-property-field-label="Count Column">
+    <!--div class="fg-property-field-validation">
+        <div fg-property-field="columnCount"
+             fg-property-field-label="Columns Count">
             <input fg-input-number
                    fg-field-redraw
                    class="form-control"
                    type="text"
-                   name="columns"
-                   title="Count of Columns for layout"
-                   ng-model="field.validation.columns"/>
+                   name="columnCount"
+                   title="Columns Count"
+                   ng-model="field.validation.columnCount" min="1" max="50"/>
         </div>
     </div>
 
     <div class="fg-property-field-validation">
-        <div fg-property-field="row"
-             fg-property-field-label="Count Row">
+        <div fg-property-field="rowCount"
+             fg-property-field-label="Rows Count">
             <input fg-input-number
                    fg-field-redraw
                    class="form-control"
                    type="text"
-                   name="rows"
-                   title="Count of Row int table"
-                   ng-model="field.validation.rows"/>
+                   name="rowCount"
+                   title="Rows Count"
+                   ng-model="field.validation.rowCount" min="1" max="50"/>
         </div>
-    </div>
+    </div-->
 
-    <!--Values-->
 
     <div class="fg-property-field-validation">
-        <div fg-property-field="columnValues"
-             fg-property-field-label="Column Headers(Separated by ', ' )">
-            <input fg-input-text
+        <div fg-property-field="columnHeaders"
+             fg-property-field-label="Column Headers*">
+            <input
                    fg-field-redraw
                    class="form-control"
                    type="text"
-                   name="columnValues"
-                   title="Column Headers"
-                   ng-model="field.validation.columnValues"/>
+                   name="columnHeaders"
+                   title="You need set Column Headers"
+                   ng-model="field.validation.columnHeaders" />
         </div>
+
+
     </div>
+
 
     <div class="fg-property-field-validation">
-        <div fg-property-field="rowValues"
-             fg-property-field-label="Row Headers(Separated by ', ')">
-            <input fg-input-text
-                   fg-field-redraw
-                   class="form-control"
-                   type="text"
-                   name="rowValues"
-                   title="Row Headers"
-                   ng-model="field.validation.rowValues"/>
+        <div fg-property-field="rowHeaders"
+             fg-property-field-label="Row Headers*">
+            <input
+                    fg-field-redraw
+                    class="form-control"
+                    type="text"
+                    name="rowHeaders"
+                    title="You need set Row Headers"
+                    ng-model="field.validation.rowHeaders" />
         </div>
+
+
     </div>
 
 
 
 
+    <div class="fg-property-field-validation">
+        <div fg-property-field="render"
+             fg-property-field-label="Render">
+
+            <input type="checkbox"
+                   ng-model="field.validation.render"
+                   title="Render">
+        </div>
 
 
+    </div>
 
-
-<!--div fg-property-field-validation="{ required: true, minlength: true, maxlength: true, pattern: true }"></div-->
 </div>
+<!--div fg-tabs-pane="Validation">
+  <div fg-property-field-validation="{ required: false, minlength: false, maxlength: false, pattern: false }"></div>
+</div-->

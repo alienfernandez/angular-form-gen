@@ -263,7 +263,7 @@ fg.config(function (fgConfigProvider, FgField) {
        // new FgField('datepicker', {displayName: 'Date Picker', value:  new Date()  })
 
     ], 'Select information fields': [
-        // new FgField('customtable', {displayName: 'Custom Table', value:  ''  }),
+         new FgField('customtable', {displayName: 'Custom Table', value: ''} ),
          new FgField('label', {displayName: 'Label', value:  ''  }),
          new FgField('paragraph', {nolabel:true,  value:  'Paragraph...'  })
       ]
