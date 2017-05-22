@@ -9,18 +9,18 @@
 
 
 
-<div class="table-responsive" ng-if="field.schema.validation.render">
+<div class="table-responsive">
     <table class="table table-bordered">
 
         <tbody ng-if="field.schema.validation.rowHeaders">
-            <tr ng-if="field.schema.validation.columnHeaders ">
-                <td ng-if="field.schema.validation.rowHeaders && field.schema.validation.rowHeaders !=' ' && field.schema.validation.rowHeaders !='  '" style="width: 20%"></td>
+            <tr ng-if="field.schema.validation.columnHeaders && field.schema.validation.columnHeaders.length +1> field.schema.validation.columnHeaders.split(',').length">
+                <td ng-if="field.schema.validation.rowHeaders && field.schema.validation.rowHeaders.length +1> field.schema.validation.rowHeaders.split(',').length  " style="width: 20%"></td>
                 <td style="text-align: left"  ng-repeat="cHeader in field.schema.validation.columnHeaders.split(',') track by $index" ><strong>{{cHeader}}</strong></td><!--   It's in 0 cause into the matrix is the header-->
             </tr>
 
             <tr ng-repeat="row in field.schema.validation.rowHeaders.split(',') track by $index" ng-init='outerIndex = $index'>
-                <td ng-if="row"><strong>{{row}}</strong></td>
-                <td ng-repeat="cellValue in field.schema.validation.columnHeaders.split(',')"> <textarea rows="3"  ng-model="form.data[field.schema.name][outerIndex +''+ $index]"></textarea></td>
+                <td ng-if="field.schema.validation.rowHeaders && field.schema.validation.rowHeaders.length +1> field.schema.validation.rowHeaders.split(',').length  "><strong>{{row}}</strong></td>
+                <td ng-repeat="cellValue in field.schema.validation.columnHeaders.split(',') track by s+''+$index"> <textarea rows="3"  ng-model="form.data[field.schema.name][outerIndex +''+ $index]"></textarea></td>
             </tr>
         </tbody>
     </table>
