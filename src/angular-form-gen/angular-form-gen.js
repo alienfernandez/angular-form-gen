@@ -265,7 +265,8 @@ fg.config(function (fgConfigProvider, FgField) {
     ], 'Select information fields': [
          new FgField('customtable', {displayName: 'Custom Table', value: ''} ),
          new FgField('label', {displayName: 'Label', value:  ''  }),
-         new FgField('paragraph', {nolabel:true,  value:  'Paragraph...'  })
+         new FgField('paragraph', {nolabel:true,  value:  'Paragraph...'  }),
+         new FgField('date', { displayName: 'Date' })
       ]
   };
 
