@@ -15,6 +15,11 @@
     display: inline-block;
 }
 
+.thisone {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
 .fg-dropdown {
   z-index: 50;
 }

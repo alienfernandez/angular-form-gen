@@ -95,7 +95,7 @@ gulp.task('dist-clean', function () {
 
 });
 
-gulp.task('dist', ['dist-clean', 'angular-form-gen', 'test-run'], function () {
+gulp.task('dist', ['dist-clean', 'angular-form-gen'], function () {//, 'test-run'
 
   var destGlob = path.join(config.folders.dest, 'angular-form-gen/**/*');
   return gulp.src([

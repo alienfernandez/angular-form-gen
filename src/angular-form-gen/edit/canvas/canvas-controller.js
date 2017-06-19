@@ -5,6 +5,7 @@ fg.controller('fgEditCanvasController', function ($scope, dqUtils, $timeout, fgU
     index: 0
   };
 
+
   // - - - 8-< - - - - - - - - - - - - - - - - - - - - -
   // Drag & drop
   // - - - 8-< - - - - - - - - - - - - - - - - - - - - -
