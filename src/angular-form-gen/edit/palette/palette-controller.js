@@ -10,7 +10,6 @@ fg.controller('fgEditPaletteController', function ($scope, fgConfig) {
   $(document).ready(function(){
           $(document).scroll(function(){
               $('.thisone').css('position','');
-              top = $('.thisone').offset().top;
               $('.thisone').css('position','absolute');
               $('.thisone').css('top',Math.max(0,$(document).scrollTop()));
               $('.thisone').css('width', '96%');
