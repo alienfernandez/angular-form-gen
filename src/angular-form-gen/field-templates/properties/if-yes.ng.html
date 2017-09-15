@@ -1,0 +1,16 @@
+<div fg-tabs-pane="Properties">
+    <div fg-property-field-common="{ fieldname: true, displayname: true,  placeholder: true, tooltip: true, children: [] }"></div>
+    <div fg-property-field="fieldValue">
+        <div class="checkbox">
+            <label title="Set the initial value of this field.">
+                <input type="checkbox" name="fieldValue" ng-model="field.value"/>
+                Initial value
+            </label>
+        </div>
+    </div>
+    <div fg-tabs-pane="Validation">
+        <div fg-property-field-validation="{ required: true, minlength: true, maxlength: true, pattern: true }"></div>
+    </div>
+
+</div>
+

@@ -6,10 +6,10 @@
     "dist/angular-form-gen.css"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/adrieltiti/angular-form-gen",
+  "homepage": "https://github.com/alienfernandez/angular-form-generator",
   "repository": {
     "type": "git",
-    "url": "git@github.com:adrieltiti/angular-form-gen.get"
+    "url": "git@github.com:alienfernandez/angular-form-generator.git"
   },
   "keywords": [
     "angularjs",
@@ -23,7 +23,7 @@
     "Null McNull <noreplies@hotmail.com> https://github.com/McNull",
     "Pranav Sathy https://github.com/PranavSathy",
     "Adriel Acosta https://github.com/adrieltiti",
-    "Alien Fernandez <alienfernandez85@gmail.com> https://github.com/alienfernandez",
+    "Alien Fernandez <alienfernandez85@gmail.com> https://github.com/alienfernandez"
   ],
   "moduleType": [
     "globals"
@@ -57,7 +57,7 @@
     "angular-markdown-text": "~0.0.2",
     "angular-sanitize": "~1.2.21",
     "angular-animate": "~1.2.21",
-    "bootstrap-daterangepicker":"2.1.25"
+    "bootstrap-daterangepicker": "2.1.25"
   },
   "overrides": {
     "respond": {

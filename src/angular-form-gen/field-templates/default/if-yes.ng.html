@@ -1,0 +1,25 @@
+<div class="checkbox">
+    <label title="{{ field.schema.tooltip }}">
+        <input fg-field-input
+               id="{{ field.$_id }}"
+               type="checkbox"
+               tabindex="{{ tabIndex }}"
+               ng-model="form.data[field.schema.name]">
+        <span ng-if="field.schema.nolabel">{{ field.schema.displayName }}</span>
+    </label>
+    <div ng-if="form.data[field.schema.name]">
+        <textarea class="form-control"
+                  fg-field-input
+                  fg-placeholder="field.schema.placeholder"
+                  ng-model="form.data[field.schema.detailsYes]"
+                  title="{{ field.schema.tooltip }}"
+                  tabindex="{{ tabIndex }}"
+                  ng-required="field.schema.validation.required"
+                  ng-minlength="{{ field.schema.validation.minlength }}"
+                  ng-maxlength="{{ field.schema.validation.maxlength }}"
+                  ng-pattern="{{ field.schema.validation.pattern }}"
+        >
+        </textarea>
+
+    </div>
+</div>

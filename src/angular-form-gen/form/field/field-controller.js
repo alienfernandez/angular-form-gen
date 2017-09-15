@@ -21,7 +21,6 @@ fg.controller('fgFieldController', function($scope, fgUtils) {
   };
 
   this.initField = function(fieldSchema) {
-
     _field = {
       $_id: 'id' + fgUtils.getUnique(),
       schema: fieldSchema
