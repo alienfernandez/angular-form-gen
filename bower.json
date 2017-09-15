@@ -1,5 +1,5 @@
 {
-  "name": "qa-angular-form-gen",
+  "name": "angular-form-generator",
   "description": "Dynamic drag and drop angular-js form creation, utilizing FontAwesome",
   "main": [
     "dist/angular-form-gen.js",
@@ -18,11 +18,12 @@
     "schema",
     "generator"
   ],
-  "version": "0.2.5",
+  "version": "0.3.0",
   "authors": [
-    "Adriel Acosta https://github.com/adrieltiti",
+    "Null McNull <noreplies@hotmail.com> https://github.com/McNull",
     "Pranav Sathy https://github.com/PranavSathy",
-    "Null McNull <noreplies@hotmail.com> https://github.com/McNull"
+    "Adriel Acosta https://github.com/adrieltiti",
+    "Alien Fernandez <alienfernandez85@gmail.com> https://github.com/alienfernandez",
   ],
   "moduleType": [
     "globals"
