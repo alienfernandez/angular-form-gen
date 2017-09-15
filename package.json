@@ -1,8 +1,8 @@
 {
-  "name": "aa-angular-form-gen",
-  "version": "0.1.2",
+  "name": "angular-form-generator",
+  "version": "0.3.0",
   "description": "Fork of angular-form-gen to fix RegEx errors, and utilize FontAwesome",
-  "homepage": "https://github.com/adrieltiti/angular-form-gen",
+  "homepage": "https://github.com/alienfernandez/angular-form-generator",
   "main": "gulp",
   "scripts": {
     "test": "gulp test"
