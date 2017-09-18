@@ -4,7 +4,8 @@
                id="{{ field.$_id }}"
                type="checkbox"
                tabindex="{{ tabIndex }}"
-               ng-model="form.data[field.schema.name]">
+               ng-model="form.data[field.schema.name]"
+               ng-change="(!form.data[field.schema.name]) ? (form.data[field.schema.detailsYes] = '') : angular.noop">
         <span ng-if="field.schema.nolabel">{{ field.schema.displayName }}</span>
     </label>
     <div ng-if="form.data[field.schema.name]">
